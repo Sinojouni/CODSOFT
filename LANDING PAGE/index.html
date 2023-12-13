@@ -1,1 +1,74 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOT club</title>
+</head>
+<body>
+    <script>
+        function change(i)
+        {
+            let Object = document.getElementById("img");
+            Object.style.backgroundImage="url('"+i+".jpg')";
+        }
+    </script>
+    <header>
+        <h1>GOT Fan club</h1>
+        <nav>
+            <ul>
+                <li><a href="#section-1">Welcom</a></li>
+                <li><a href="#section-2">About</a></li>
+                <li><a href="#section-3">Play</a></li>
+                <li><a href="#section-4">Gallary</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcom" id="section-1">
+            <h2>welcom to GOT fan club</h2>
+            <button>join us</button>
+        </section>
+        <section class="about" id="section-2">
+            <h2>About us</h2>
+            <p>GOT club is a club created by a game of throns fans. Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, a series of fantasy novels by George R. R. Martin, the first of which is A Game of Thrones. The show was shot in the United Kingdom, Canada, Croatia, Iceland, Malta, Morocco, and Spain. It premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons.</p>
+            <p>so if you are a game of throns fan you shoud join us in the club by clicking thr button above and i hope you enjoy</p>
+        </section>
+        <section class="gallary" id="section-3">
+            <h2>let you favorite character sit on the iron thron</h2>
+            <div id="img"></div>
+            <div class="buttom">
+            <button class="stark" onclick="change(1)">arya</button>
+            <button class="stark" onclick="change(2)">bran</button>
+            <button class="lanster" onclick="change(3)">cersei</button>
+            <button class="tar" onclick="change(4)">daenerys</button>
+            <button class="lanster" onclick="change(5)">jaime</button>
+            <button class="stark" onclick="change(6)">snow</button>
+            <button class="king" onclick="change(7)">night king</button>
+            <button class="tarly" onclick="change(8)">sam</button>
+            <button class="stark" onclick="change(9)">sansa</button>
+            <button class="stark" onclick="change(10)">Theon</button>
+            <button class="lanster" onclick="change(11)">Tyrion</button>
+            <button class="va" onclick="change(12)">varys</button>
+            </div>
+        </section>
+        <section class="gal" id="section-4">
+            <h2>Gallary</h2>
+            <div>
+                <img src="g1.jpeg">
+                <img src="g2.jpeg">
+                <img src="g3.jpeg">
+                <img src="g4.jpeg">
+                <img src="g5.jpeg">
+                <img src="g6.jpeg">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4>&copy; GOT fan club 2023</h4>
+        <h4>All rights reserved</h4>
+    </footer>
+</body>
+</html>
