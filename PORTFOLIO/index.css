@@ -1,0 +1,260 @@
+body{
+    background-color: #081b29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #555;
+
+}
+.wraper{
+  position: relative;
+    height:40rem;
+    width: 60rem;
+    background-color:#081b29; 
+}
+#page-1{
+  z-index: 4;
+}
+
+#page-2{
+  z-index: 1;
+}
+
+#page-3{
+  z-index: 1;
+}
+
+#page-4{
+  z-index: 1;
+}
+
+#page-1,#page-2,#page-3,#page-4{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+
+
+.left{
+    position: relative;
+    height:100%;
+    width: 50%;
+    background:linear-gradient(45deg,#00abf0,#006e9a);
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    box-shadow:0 0 .6rem rgba(0,0,0,.2) ;
+}
+
+.right{
+    position: relative;
+    height:100%;
+    width: 50%;
+    background:linear-gradient(45deg,#00abf0,#006e9a);
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    transform: rotateY(180deg);
+    box-shadow:0 0 .6rem rgba(0,0,0,.2) ;
+    
+}
+
+.page-r{
+    position: relative;
+    height:90%;
+    width: 90%;
+    left: 10.1%;
+    top:5%;
+    background:linear-gradient(90deg,#fff,#ddd);
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    box-shadow:0 0 .6rem rgba(0,0,0,.2) ;
+
+    
+}
+
+.page-l,.page-l2{
+  position: relative;
+    height:90%;
+    width: 90%;
+    left: 10%;
+    top:5%;
+    background:linear-gradient(90deg,#fff,#ddd);
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    box-shadow:0 0 .6rem rgba(0,0,0,.2) ;
+
+}
+
+
+.page-l{
+  display: flex;
+  align-items: center;
+}
+
+.fa {
+    padding: 1.3vw;
+    width: 0.1vw;
+    height: 0.1vw;
+    color: #00abf0;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #ffff;
+    border: 0.5vh solid #00abf0;
+  }
+
+  .fa:hover {
+    opacity: 0.5;
+  }
+
+  img{
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    border: 0.5vh solid #00abf0;
+  }
+  img:hover{
+    border: 0.5vh solid #ffffff;
+  }
+  .cont{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .text{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .sosial,.text,.name,.major,.photo,.but{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .name{
+    font-size: 2.5rem;
+    color:#333 ;
+  }
+  .major{
+    font-size: 1.5rem;
+    color:#00abf0 ;
+  }
+  .but{
+    display: flex;
+    flex-direction: row;
+  }
+  .cv,.contactme{
+    color: #ddd;
+    background-color: #00abf0 ;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8%;
+    font-size: 1.1rem;
+    border: 0.1rem solid #00abf0;
+  }
+
+  .cv:hover,.contactme:hover{
+    color: #00abf0;
+    background-color: #fff;
+    border: 0.1rem solid #00abf0;
+  }
+  .lef{
+    transform: rotateY(180deg);
+  }
+  .title{
+    font-size: 1.5rem;
+    color:#333 ;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .date{
+    color: #00abf0;
+    font-size: 1rem;
+  }
+  .title-2{
+    color: #333 ;
+    font-size: 1.2vw;
+  }
+  .exp{
+    margin-top: 1rem;
+    border-left:0.2rem solid #00abf0 ;
+    margin-left:0.5rem ;
+  }
+
+  .cer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    margin:2rem ;
+  }
+
+  .hold{
+    width: 4vw;
+    height: 4vw;
+    border: 0.2rem solid #00abf0;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+  }
+  .holdproj{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #email,#name{
+    border: 0.2rem solid #00abf0;
+    height: 2rem;
+    width: 15vw;
+  }
+  #message{
+    border: 0.2rem solid #00abf0;
+    height: 8rem;
+    width: 17vw;
+  }
+  .num,.bute{
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 1rem;
+  }
+  .num2{
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 1rem;
+    left: 50%;
+  }
+  .bute{
+    left: 1rem;
+  }
+  button{
+    text-decoration:none;
+    background-color: #fff;
+    border: none;
+    border: 0.1rem solid #00abf0 ;
+    color: #00abf0;
+    border-radius:10% ;
+  }
+  button:hover{
+    color: #ffff;
+    background-color: #00abf0;
+  }
+  a{
+    text-decoration: none;
+  }
+  .link{
+    display: flex;
+    flex-direction: column;
+  }
